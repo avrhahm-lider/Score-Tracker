@@ -6,6 +6,8 @@ import leaderboardRouter from './routes/leaderboard.js'
 import statsRouter from './routes/stats.js'
 import gamesRouter from './routes/games.js'
 import playersRouter from './routes/players.js'
+import dns from 'dns'
+dns.setServers(["1.1.1.1", "8.8.8.8"])
 
 const app = express()
 const PORT = process.env.PORT || 3000

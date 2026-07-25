@@ -4,7 +4,7 @@
   "description": "\"# Score-Tracker\"",
   "main": "app.js",
   "scripts": {
-    "test": "node --watch app.js"
+    "start": "node --watch app.js"
   },
   "repository": {
     "type": "git",
