@@ -1,0 +1,27 @@
+{
+  "name": "scour_traker",
+  "version": "1.0.0",
+  "description": "\"# Score-Tracker\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avrhahm-lider/Score-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/avrhahm-lider/Score-Tracker/issues"
+  },
+  "homepage": "https://github.com/avrhahm-lider/Score-Tracker#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.5.0",
+    "zod": "^4.4.3"
+  }
+}
