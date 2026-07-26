@@ -17,8 +17,8 @@ export async function connectDB() {
     if (db) return db
     if (!connectingPromise) {
         connectingPromise = client.connect().then(() => {
-            db = client.db(dbName)
-            console.log(`Connected to MongoDB Atlas (db: ${dbName})`)
+            db = client.db("Score_Tracker")
+            console.log(`Connected to MongoDB Atlas (db: "Score_Tracker")`)
             return db
         })
     }
@@ -27,7 +27,7 @@ export async function connectDB() {
 
 export async function getScoresCollection() {
     const database = await connectDB()
-    return database.collection('scores')
+    return database.collection('games')
 }
 
 export async function closeDB() {
